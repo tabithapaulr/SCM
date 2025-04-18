@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Analytics Tool</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <title>Sales Analytics Tool</title>
+<style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .subtitle {
+      font-size: 18px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 0;
+    }
+
+    .feature {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 30px;
+      width: 300px;
+    }
+
+    .feature h2 {
+      color: #333;
+    }
+
+    .feature p {
+      color: #666;
+    }
+
+    /* Styling for the futuristic look */
+    h1 {
+      font-size: 48px;
+      letter-spacing: 2px;
+    }
+
+    .feature {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sales Analytics Tool</h1>
+    <p class="subtitle">Improve your supply chain efficiency with Advanced Analytics</p>
+  </header>
+  <section class="features">
+    <!-- <div class="feature" id="predictivePlanning"style="cursor: pointer;">
+      <h2>Predictive Production Planning</h2>
+      <p>Forecast the number of units to be produced for the next three years with precision.</p>
+    </div>
+  </script> -->
+  <div class="feature" id="predictivePlanning"style="cursor: pointer;" onclick="productionplanning_page()">
+    <h2>Predictive Production Planning</h2>
+    <p>Forecast the number of units to be produced for the next two years.</p>
+  </div>
+  
+
+
+    <!-- JavaScript code to handle the click event and create the visualization -->
+    <script>
+        function productionplanning_page() {
+            // Redirect to the desired page
+            window.location.href = "/predict_production_planning";
+        }
+        function safetystock_page() {
+            // Redirect to the desired page
+            window.location.href = "/predict_safety_stock";
+        }
+        function modelcomparison_page() {
+            // Redirect to the desired page
+            window.location.href = "/model_comparison";
+        }
+        function demandplanning_page() {
+            // Redirect to the desired page
+            window.location.href = "/demand_planning";
+        }
+        function outlier_detection_page() {
+            // Redirect to the desired page
+            window.location.href = "/outlier_detection";
+        }
+        function price_analysis_page() {
+            // Redirect to the desired page
+            window.location.href = "/price_analysis";
+        }
+        function product_analysis_page() {
+            // Redirect to the desired page
+            window.location.href = "/product_performance";
+        }
+        function inventory_turnover_page() {
+            // Redirect to the desired page
+            window.location.href = "/inventory_turnover_rate";
+        }
+
+    </script>
+     
+
+    
+    <div class="feature" id="safetystock" style="cursor: pointer;" onclick="safetystock_page()">
+      <h2>Safety Stock Calculation</h2>
+      <p>Determine optimal safety stock levels based on production forecasts to minimize stockouts.</p>
+    </div>
+  
+    <div class="feature" id="modelcomparison" style="cursor: pointer;" onclick="modelcomparison_page()">
+      <h2>Model Comparison</h2>
+      <p>Comparison of various predictive models.</p>
+    </div>
+    <div class="feature" id="demandplanning" style="cursor: pointer;" onclick="demandplanning_page()">
+      <h2>Demand Planning</h2>
+      <p>Gain insights into product demand across different regions for strategic planning.</p>
+    </div>
+    <div class="feature" id="outlierdetection" style="cursor: pointer;" onclick="outlier_detection_page()">
+      <h2>Outlier Detection</h2>
+      <p>Outlier observation and correction</p>
+    </div>
+    <div class="feature" id="priceanalysis" style="cursor: pointer;" onclick="price_analysis_page()">
+      <h2>Price Analysis</h2>
+      <p>Price Analysis for informed pricing strategies.</p>
+    </div>
+    <div class="feature" id="inventoryturnoverrate" style="cursor: pointer;" onclick="inventory_turnover_page()">
+      <h2>Inventory Turnover Rate</h2>
+      <p>Monitor and optimize inventory turnover rates to minimize carrying costs.</p>
+    </div>
+    <div class="feature" id="productanalysis" style="cursor: pointer;" onclick="product_analysis_page()">
+      <h2>Product Performance Monitoring</h2>
+      <p>Track and assess product performance over time for continuous improvement.</p>
+    </div>
+  </section>
+
+</body>
+</html>
